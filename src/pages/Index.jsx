@@ -11,7 +11,7 @@ const Index = () => {
             <ul className="flex space-x-4">
               <li><a href="#about" className="hover:text-indigo-200">About</a></li>
               <li><a href="#art" className="hover:text-indigo-200">Art</a></li>
-              <li><a href="#finance" className="hover:text-indigo-200">Finance</a></li>
+              <li><a href="#education" className="hover:text-indigo-200">Education</a></li>
               <li><a href="#contact" className="hover:text-indigo-200">Contact</a></li>
             </ul>
           </nav>
@@ -25,7 +25,7 @@ const Index = () => {
               <CardTitle>About Me</CardTitle>
             </CardHeader>
             <CardContent>
-              <p>Hello! I'm Freja Ling, an artist with a passion for finance. I balance my creative pursuits with my career in banking, finding inspiration in both worlds.</p>
+              <p>Hi, my name is Freja. I live in Stockholm, but I'm originally from Gothenburg. I'm a multifaceted individual with interests spanning art, technology, and business management.</p>
             </CardContent>
           </Card>
         </section>
@@ -36,19 +36,19 @@ const Index = () => {
               <CardTitle>My Art</CardTitle>
             </CardHeader>
             <CardContent>
-              <p>As an artist, I specialize in [your art form]. My work explores themes of [your themes]. Check out my latest pieces below.</p>
+              <p>My paintings mostly depict faces in different styles. I like to think of everything as being both the same and different, and about how things can interact and fit together into new things. I'm also interested in how the analog can meet the digital.</p>
               {/* You can add image components or a gallery here */}
             </CardContent>
           </Card>
         </section>
 
-        <section id="finance" className="mb-8">
+        <section id="education" className="mb-8">
           <Card>
             <CardHeader>
-              <CardTitle>Banking Career</CardTitle>
+              <CardTitle>Education</CardTitle>
             </CardHeader>
             <CardContent>
-              <p>In my role as a bank employee, I [brief description of your role]. I'm passionate about [aspect of finance you're interested in].</p>
+              <p>I'm currently pursuing an M.Sc. in Industrial Engineering and Business Management, with a minor in Computer Science. Prior to this, I studied art with a bit of PR for a year, which has given me a unique perspective on both the creative and technical aspects of my work.</p>
             </CardContent>
           </Card>
         </section>
@@ -59,8 +59,11 @@ const Index = () => {
               <CardTitle>Get in Touch</CardTitle>
             </CardHeader>
             <CardContent>
-              <p>Interested in my art or financial expertise? Don't hesitate to reach out!</p>
-              <Button className="mt-4">Contact Me</Button>
+              <p>I'm always happy to talk! Feel free to reach out to me at:</p>
+              <p className="mt-2 font-semibold">freja.ling@gmail.com</p>
+              <Button className="mt-4" onClick={() => window.location.href = 'mailto:freja.ling@gmail.com'}>
+                Say Hi :)
+              </Button>
             </CardContent>
           </Card>
         </section>
